@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\GreatestCommonDivisorHelper.cs" />
     <Compile Include="Helpers\PrimeFactor.cs" />
     <Compile Include="Helpers\PrimeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\1-10\Solver1.cs" />
+    <Compile Include="Solutions\1-10\Solver10.cs" />
     <Compile Include="Solutions\1-10\Solver2.cs" />
     <Compile Include="Solutions\1-10\Solver3.cs" />
     <Compile Include="Solutions\1-10\Solver4.cs" />
@@ -52,7 +54,10 @@
     <Compile Include="Solutions\1-10\Solver6.cs" />
     <Compile Include="Solutions\1-10\Solver7.cs" />
     <Compile Include="Solutions\1-10\Solver8.cs" />
+    <Compile Include="Solutions\1-10\Solver9.cs" />
     <Compile Include="Solutions\Contracts\ISolver.cs" />
+    <Compile Include="Solutions\Solutions 11 - 20\Solver11.cs" />
+    <Compile Include="Solutions\Solutions 11 - 20\Solver12.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

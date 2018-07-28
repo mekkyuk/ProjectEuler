@@ -20,7 +20,8 @@ namespace Presentation
             var types = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(s => s.GetTypes())
                 .Where(p => type.IsAssignableFrom(p) && p != type).ToList();
-            types.ForEach(t => cmbQuestions.SelectedIndex = cmbQuestions.Items.Add(t.Name.Replace("Solver", "")));
+            var typesList = types.Select(t => t.Name.Replace("Solver", "")).Select(t => int.Parse(t)).OrderBy(t => t).Select(x => x.ToString()).ToList();
+            typesList.ForEach(t => cmbQuestions.SelectedIndex = cmbQuestions.Items.Add(t));
             txtInput.Focus();
         }
 

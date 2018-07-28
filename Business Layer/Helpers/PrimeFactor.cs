@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Collections.Generic;
+using System.Numerics;
 
 namespace Business_Layer.Helpers
 {
@@ -24,6 +25,19 @@ namespace Business_Layer.Helpers
             }
 
             return highestPrime;
+        }
+
+        public List<BigInteger> RhoAlgorithimFOrPrimeFactors(BigInteger number)
+        {
+            List<BigInteger> results = new List<BigInteger>() ;
+            BigInteger x = 2, y = 2, d = 1;
+            results.Add(x);
+            while(d == 1)
+            {
+                x = x * x + 1;
+                y = (y * y + 1) * (y * y + 1);
+                d
+            }
         }
     }
 }

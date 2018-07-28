@@ -26,7 +26,7 @@ namespace Business_Layer.Helpers
             while(primeTest * primeTest < limit)
             {
                 ExtractMultiples(limit, results, primeTest);
-                for(int i = primeTest + 1; i < limit; i++)
+                for(int i = primeTest + 1; i <= limit; i++)
                 {
                     if(results[i] == true)
                     {
@@ -42,7 +42,7 @@ namespace Business_Layer.Helpers
         private static void ExtractMultiples(int limit, bool[] results, int primeTest)
         {
             var testNumber = primeTest * 2;
-            while (testNumber < limit)
+            while (testNumber <= limit)
             {
                 results[testNumber] = false;
                 testNumber += primeTest;
