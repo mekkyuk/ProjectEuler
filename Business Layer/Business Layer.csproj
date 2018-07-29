@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\BigCalculationHelper.cs" />
+    <Compile Include="Helpers\DivisorsHelper.cs" />
     <Compile Include="Helpers\GreatestCommonDivisorHelper.cs" />
     <Compile Include="Helpers\PrimeFactor.cs" />
     <Compile Include="Helpers\PrimeHelper.cs" />
@@ -55,9 +57,25 @@
     <Compile Include="Solutions\1-10\Solver7.cs" />
     <Compile Include="Solutions\1-10\Solver8.cs" />
     <Compile Include="Solutions\1-10\Solver9.cs" />
+    <Compile Include="Solutions\21 - 30\Solver21.cs" />
+    <Compile Include="Solutions\21 - 30\Solver22.cs" />
+    <Compile Include="Solutions\21 - 30\Solver23.cs" />
     <Compile Include="Solutions\Contracts\ISolver.cs" />
-    <Compile Include="Solutions\Solutions 11 - 20\Solver11.cs" />
-    <Compile Include="Solutions\Solutions 11 - 20\Solver12.cs" />
+    <Compile Include="Solutions\11 - 20\Solver11.cs" />
+    <Compile Include="Solutions\11 - 20\Solver12.cs" />
+    <Compile Include="Solutions\11 - 20\Solver13.cs" />
+    <Compile Include="Solutions\11 - 20\Solver14.cs" />
+    <Compile Include="Solutions\11 - 20\Solver15.cs" />
+    <Compile Include="Solutions\11 - 20\Solver16.cs" />
+    <Compile Include="Solutions\11 - 20\Solver17.cs" />
+    <Compile Include="Solutions\11 - 20\Solver18.cs" />
+    <Compile Include="Solutions\11 - 20\Solver19.cs" />
+    <Compile Include="Solutions\11 - 20\Solver20.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Solutions\21 - 30\22.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

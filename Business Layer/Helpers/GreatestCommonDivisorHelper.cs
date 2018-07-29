@@ -9,9 +9,9 @@ namespace Business_Layer.Helpers
 {
     public class GreatestCommonDivisorHelper
     {
-        public BigInteger BinaryGCD(int firstInput, int secondInput)
+        public static BigInteger BinaryGCD(BigInteger firstInput, BigInteger secondInput)
         {
-            BigInteger d = 0;
+            int d = 0;
             while(firstInput % 2 == 0 && secondInput % 2 == 0)
             {
                 firstInput = firstInput / 2;
