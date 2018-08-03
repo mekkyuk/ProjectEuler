@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Helpers\BigCalculationHelper.cs" />
     <Compile Include="Helpers\DivisorsHelper.cs" />
+    <Compile Include="Helpers\GeneralOperationsHelper.cs" />
     <Compile Include="Helpers\GreatestCommonDivisorHelper.cs" />
     <Compile Include="Helpers\PrimeFactor.cs" />
     <Compile Include="Helpers\PrimeHelper.cs" />
@@ -60,6 +61,17 @@
     <Compile Include="Solutions\21 - 30\Solver21.cs" />
     <Compile Include="Solutions\21 - 30\Solver22.cs" />
     <Compile Include="Solutions\21 - 30\Solver23.cs" />
+    <Compile Include="Solutions\21 - 30\Solver25.cs" />
+    <Compile Include="Solutions\21 - 30\Solver26.cs" />
+    <Compile Include="Solutions\21 - 30\Solver27.cs" />
+    <Compile Include="Solutions\21 - 30\Solver28.cs" />
+    <Compile Include="Solutions\21 - 30\Solver29.cs" />
+    <Compile Include="Solutions\21 - 30\Solver30.cs" />
+    <Compile Include="Solutions\31 - 40\Solver31.cs" />
+    <Compile Include="Solutions\31 - 40\Solver32.cs" />
+    <Compile Include="Solutions\31 - 40\Solver33.cs" />
+    <Compile Include="Solutions\31 - 40\Solver34.cs" />
+    <Compile Include="Solutions\31 - 40\Solver35.cs" />
     <Compile Include="Solutions\Contracts\ISolver.cs" />
     <Compile Include="Solutions\11 - 20\Solver11.cs" />
     <Compile Include="Solutions\11 - 20\Solver12.cs" />
