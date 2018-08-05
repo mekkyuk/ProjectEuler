@@ -28,5 +28,25 @@ namespace Business_Layer.Helpers
 
             return result;
         }
+
+        public static bool IsPallindrome(int input)
+        {
+            var inputString = input.ToString();
+
+            return IsPallindrome(inputString);
+        }
+
+        public static bool IsPallindrome(string inputString)
+        {
+            for (int i = 0; i < inputString.Length / 2; i++)
+            {
+                if (inputString[i] != inputString[inputString.Length - i - 1])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }

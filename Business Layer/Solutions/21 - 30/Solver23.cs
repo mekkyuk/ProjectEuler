@@ -11,33 +11,28 @@ namespace Business_Layer.Solutions._21___30
     {
         public BigInteger Solve(BigInteger? input = null)
         {
-            var primes = PrimeHelper.FindPrimesUnderLimit(30000);
-            bool[] abundantNumbers = new bool[28124];
-            for (int i = 2; i < 28124 / 2; i++)
+            var primes = PrimeHelper.FindPrimesUnderLimit(28124);
+            List<int> abundantNumbers = new List<int>();
+            for (int i = 2; i < 28124; i++)
             {
-                if(DivisorsHelper.SumOfProperDivisors(i, primes)> i)
+                if(DivisorsHelper.SumOfProperDivisors(i, primes) > i)
                 {
-                    abundantNumbers[i] = true;
+                    abundantNumbers.Add(i);
                 }
             }
 
             BigInteger result = 0;
             bool[] canBeSummed = new bool[28124];
-            for(int i = 1; i < 28124; i++)
+            for(int i = 0; i < abundantNumbers.Count; i++)
             {
-                if (!abundantNumbers[i])
+                for (int j = 0; j < abundantNumbers.Count; j++)
                 {
-                    continue;
-                }
-
-                for (int j = 1; i + j < 28124; j++)
-                {
-                    if (!abundantNumbers[j])
+                    if(abundantNumbers[i] + abundantNumbers[j] >= 28124)
                     {
-                        continue;
+                        break;
                     }
 
-                    canBeSummed[i + j] = true;
+                    canBeSummed[abundantNumbers[i] + abundantNumbers[j]] = true;
                 }
             }
 
